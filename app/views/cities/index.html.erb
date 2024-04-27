@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Cities</h1>
+
+<div id="cities" hx-trigger="load" hx-get="/htmx_select/cities" hx-target="#cities">
+  <select id="cities">
+  </select>
+</div>
+
+<%= link_to "New city", new_city_path %>
